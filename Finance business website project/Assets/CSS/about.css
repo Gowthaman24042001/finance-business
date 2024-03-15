@@ -1,0 +1,468 @@
+*{
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+    top: 50;
+    right: 50;
+}
+.root{
+    --text--color:#333;
+    --secondary--color: #A4C639;
+    --white--color: white;
+    --black--color: black;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Mukta", sans-serif;
+}
+p{
+    font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #A4C639;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid White;  /* creates padding around scroll thumb */
+  }
+  
+.about-us{
+   background-image: url("/Assets/Images/page-heading-bg.jpg");
+   background-position: center;
+   background-size: cover;
+   padding: 170px 50px;
+   margin-top:50px;
+}
+.para-text{
+    color: white;
+    text-align: center;
+}
+
+/* About us content CSS Starts */
+
+.about-content{
+    padding: 100px 100px;
+    background-color: white;
+    width: 90%;
+    display: flex;
+}
+.about-content-text{
+    width: 40%;
+    text-align: left;
+    vertical-align: middle;
+}
+.about-content-text h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    font-family:'Poppins';
+    padding-top: 15px 0;
+}
+.about-content-text p{
+    color: #333;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.about-content-text span{
+    font-size: 40px;
+    color: #A4C639;
+}
+.button-text{
+    background-color: #A4C639;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius:50px ;
+    font-weight: 600;
+}
+.button-text:hover{
+    background-color: white;
+    color: #A4C639;
+    font-weight: 600;
+}
+.about-content-img{
+    padding-left: 50px;
+}
+
+/* Team member section CSS Starts */
+
+.team-member{
+   padding: 100px 100px;
+   background-color: #f7f7f7;
+}
+.team-member-heading{
+    text-align: center;
+}
+.team-member-heading h1{
+   color: black;
+   font-size: 40px;
+   font-weight: 600;
+   font-family: 'Poppins';
+}
+.team-member h6{
+    color: #7b7b7b;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+.team-member-heading span{
+    font-size: 40px;
+    color: #A4C639;
+}
+.team-member-card-section{
+    width: 85%;
+    padding: 50px 0;
+    display: flex;
+    font-family: 'Poppins';
+}
+.members h6{
+    color: #A4C639;
+    font-size: 800;
+    font-size: 17px;
+}
+.members h4{
+    color: black;
+    font-size: 22px;
+}
+.members p{
+    color:#7b7b7b;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.card{
+    margin: 20px;
+}
+
+/* Fun fact section CSS starts */
+
+.counter { /*Counters CSS*/
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    /* width: 100px;
+    height: 100px; */
+    /* line-height: 100px; */
+    /* display: inline-block; */
+    vertical-align: middle;
+    transition: 0.5s;
+    color: #A4C639;
+  }
+  
+  .counter.active {
+    transform: scale(1.2);
+  }
+  
+  /* END */
+
+.fun-fact-sec{
+ background-image: url("/Assets/Images/fun-facts-bg.jpg");
+    color: white;
+    font-family: 'Poppins';
+    padding: 100px 150px;
+    display: flex;
+    width: 100%;
+}
+.fun-fact-sec-text{
+    width: 50%;
+    padding-right: 100px;
+}
+.fun-fact-sec-text span{
+    color: #A4C639;
+    font-size: 40px;
+    font-weight: 600;
+}
+.fun-fact-sec-text h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: 'Poppins';
+}
+.fun-fact-sec-text p{
+    font-size: 15px;
+    padding-top: 10px;
+}
+.fun-fact-sec-text button{
+    margin-top: 10px;
+}
+.fun-fact-sec-count{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.counters-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+}
+.counters{
+    background-color: #3838389a;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+.counters h1{
+    color: #A4C639;
+    font-size: 45px;
+}
+.counters span{
+    font-size: 23px;
+    color: white;
+    padding-top: -50px;
+    font-weight: bold;
+}
+
+/* Testimonial CSS starts
+
+.Testimonial-slider-2{
+    padding: 100px 50px;
+    background-color: #f7f7f7;
+    font-family: 'Poppins';
+}
+.testimonial-heading{
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Poppins';
+}
+.testimonial-heading span{
+    color: #A4C639;
+    font-size: 40px;
+    font-weight: 600;
+}
+.testimonial-heading h1{
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: 'Poppins';
+}
+.testimonial-heading h6{
+    font-size: 15px;
+    padding-top: 10px;
+    color: #7b7b7b;
+    font-family: 'Poppins';
+}
+.testimonial-content{
+    display: flex;
+    gap: 30px;
+    width:100%;
+}
+.testimonial-content .testimonial{
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+}
+.testimonial-content .testimonial h4{
+    font-size: 20px;
+    color: black;
+}
+.testimonial-content .testimonial h6{
+    font-size: 16px;
+    color: #A4C639;
+}
+.testimonial-content .testimonial p{
+    font-size: 15px;
+    color: #333;
+}
+.profile{
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+}
+.testimonial-column{
+    width: 33%;
+} */
+
+/* Testimonial CSS starts */
+
+.Testimonial-slider-4 {
+    padding: 100px 50px;
+    background-color: #f7f7f7;
+    font-family: 'Poppins';
+    overflow: hidden; /* Hide overflow to prevent horizontal scroll */
+}
+
+.testimonial-heading {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+.testimonial-heading span {
+    color: #A4C639;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.testimonial-heading h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 10px;
+    font-family: 'Poppins';
+}
+
+.testimonial-heading h6 {
+    font-size: 15px;
+    padding-top: 10px;
+    color: #7b7b7b;
+    font-family: 'Poppins';
+}
+
+.testimonial-content {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.testimonial-column {
+    flex: 0 0 50%; /* Each column takes 50% width */
+    margin: 20px;
+}
+.testimonial-column img{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 15px;
+}
+
+.testimonial-content .testimonial {
+    padding: 25px;
+    background-color: white;
+    text-align: center;
+}
+
+.testimonial-content .testimonial h4 {
+    font-size: 20px;
+    color: black;
+}
+
+.testimonial-content .testimonial h6 {
+    font-size: 16px;
+    color: #A4C639;
+}
+
+.testimonial-content .testimonial p {
+    font-size: 15px;
+    color: #333;
+}
+
+.profile {
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+
+
+/* Mobile Responsive CSS Starts */
+
+/* For screens smaller than 480px */
+
+@media (max-width: 480px) {
+    /* About us section */
+    .about-us {
+        padding: 100px 20px;
+    }
+
+    /* About content section */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content-text,
+    .about-content-img {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Team member section */
+    
+.team-member-card-section{
+    width: 100%;
+    padding: 50px 0;
+    display: block; /* Display members one by one */
+    text-align: center;
+}
+.members h6{
+    color: #A4C639;
+    font-size: 800;
+    font-size: 17px;
+}
+.members h4{
+    color: black;
+    font-size: 22px;
+}
+.members p{
+    color:#7b7b7b;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.card{
+    margin: 20px auto; /* Center the cards */
+    width: 80%; /* Adjust the width of the cards */
+}
+
+    /* Fun fact section */
+    .fun-fact-sec {
+        padding: 80px 20px;
+        flex-direction: column;
+    }
+
+    .fun-fact-sec-text,
+    .fun-fact-sec-count {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    /* Testimonial slider section */
+    .Testimonial-slider-4 {
+        padding: 80px 20px;
+    }
+
+    .testimonial-content {
+        flex-direction: column;
+    }
+
+    .testimonial-content .testimonial,
+    .testimonial-content .profile {
+        margin-bottom: 30px;
+    }
+
+    /* abouyt content leaf image resize */
+    .about-content-img{
+        width:100%;
+    }
+    .about-content-img img{
+        width: 300px;
+        height: 300px;
+        padding-top: 50px;
+    }
+    .about-content-text{
+        width:100%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    .about-content-text h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: black;
+        font-family:'Poppins';
+        padding-top: 15px 0;
+    }
+    .about-content-text p{
+        color: #333;
+        font-size: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .about-content-text span{
+        font-size: 30px;
+        color: #A4C639;
+    }
+}

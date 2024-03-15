@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    padding: auto;
+    margin: auto;
+    top: 50;
+    right: 50;
+}
+.root{
+    --text--color:#333;
+    --secondary--color: #A4C639;
+    --white--color: white;
+    --black--color: black;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Mukta", sans-serif;
+}
+p{
+    font-family: "Poppins", sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #A4C639;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid White;  /* creates padding around scroll thumb */
+  }
+  
+/* Contact us Addres section css */
+
+.contact-us{
+    padding: 100px 30px;
+    background-color: white;
+    width: 100%;
+}
+.address-section{
+    display: flex;
+}
+.address-section .address-content{
+    width: 33.3%;
+    background-color: #F7F7F7;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Poppins';
+}
+.address-content i{
+    font-size: 45px;
+    color: #A4C639;
+    padding-bottom: 20px;
+}
+.address-content h5{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px 0;
+    font-family: 'Poppins';
+
+}
+.address-content p{
+    font-size: 15px;
+    padding:10px 0;
+}
+.address-content h6{
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 600;
+    color: #A4C639;
+}
+
+/* Contact Form CSS Starts here */
+
+.contact-form{
+    padding: 100px 50px;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.contact-form-area{
+    width: 70%;
+    padding: 50px 0;
+}
+.contact-form-1-col{
+    display: flex;
+}
+form input{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 50%;
+}
+form input:focus{
+    outline: none;
+    box-shadow: #dcdcdc 2px 2px 20px;
+}
+form::placeholder{
+    color: #333;
+    font-size: 15px;
+}
+form textarea{
+    background-color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 50px;
+    height: 130px;
+}
+form textarea:focus{
+    outline: none;
+}
+form button{
+    background-color: #A4C639;
+    color: white;
+    font-size: 16px;
+    padding:7px 30px;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+form button:hover{
+    background-color: white;
+    color: #A4C639;
+    transition: .5s;
+}
+form{
+    text-align: center;
+}
+
+.contact-form-1-col{
+    width: 100%;
+    gap: 10%;
+    text-align: center;
+}
+
+/* Map Section */
+
+.map{
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+/* Mobile Responsive CSS Starts here */
+@media only screen and (max-width: 480px) { /* Targets screens up to 480px wide */
+    /* More specific mobile styles here */
+
+    /* Global Styles (Adjusted for Mobile Responsiveness) */
+* {
+    box-sizing: border-box;
+    padding: 0; /* Remove default padding for better responsiveness */
+    margin: auto;
+  }
+  
+  /* Contact Us Address Section (Improved Layout for Mobile) */
+  .contact-us {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    background-color: white;
+    width: 100%;
+  }
+  
+  .address-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  }
+  
+  .address-section .address-content {
+    width: 100%; /* Make each address content section take full width on mobile */
+    background-color: #F7F7F7;
+    padding: 30px 20px; /* Adjust padding for better spacing */
+    text-align: center;
+    margin: 20px auto; /* Center content on mobile */
+    font-family: 'Poppins';
+  }
+  
+  /* Maintain icon styles and adjust headings for better mobile readability */
+  .address-content i {
+    font-size: 30px; /* Reduce icon size for smaller screens */
+    color: #A4C639;
+    padding-bottom: 15px;
+  }
+  
+  .address-content h5 {
+    font-size: 18px; /* Adjust heading size */
+    font-weight: 700;
+    padding: 10px 0;
+    font-family: 'Poppins';
+  }
+  
+  .address-content p {
+    font-size: 14px; /* Adjust paragraph size */
+    padding: 8px 0;
+  }
+  
+  .address-content h6 {
+    font-family: 'Poppins';
+    font-size: 14px; /* Adjust subheading size */
+    font-weight: 600;
+    color: #A4C639;
+  }
+  
+  /* Contact Form (Improved Responsiveness and Accessibility) */
+  .contact-form {
+    padding: 50px 20px; /* Adjust padding for smaller screens */
+    width: 100%;
+    background-color: #F7F7F7;
+  }
+  
+  .contact-form-area {
+    width: 100%; /* Allow form to fill full width on mobile */
+    padding: 30px 0; /* Adjust padding for better spacing  */
+  }
+  
+  .contact-form-1-col {
+    display: flex;
+    flex-wrap: wrap; /* Allow form fields to wrap on a single column on mobile */
+  }
+  
+  form input,
+  form textarea {
+    background-color: white;
+    padding: 10px; /* Maintain input padding */
+    border: 1px solid #ccc; /* Add a subtle border for better visibility */
+    border-radius: 5px; /* Adjust border radius for responsiveness */
+    width: 100%; /* Make inputs take full width on mobile */
+    margin-bottom: 15px; /* Add spacing between elements */
+  }
+  
+  /* Maintain focus styling with a visible indication */
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    box-shadow: #dcdcdc 2px 2px 5px; /* Reduced shadow for responsiveness */
+  }
+  
+  form::placeholder {
+    color: #999; /* Use a lighter gray for placeholder text */
+    font-size: 15px;
+  }
+  
+  form button {
+    background-color: #A4C639;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px; /* Adjust button padding for better responsiveness */
+    border-radius: 10px;
+    border: none;
+    display: block; /* Make button take full width on mobile */
+    margin: 20px auto; /* Center button on mobile */
+    text-align: center;
+  }
+  
+  form button:hover {
+    background-color: white;
+    color: #A4C639;
+    transition: .5s;
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  /* Map Section (No Changes Needed) */
+  .map {
+    width: 100
+  }  
+  }

@@ -1,0 +1,104 @@
+.top-header{
+    background-color: #A4C639;
+    display: flex;
+    height: 50px; 
+    vertical-align: middle;
+    line-height: 2px;
+    align-items: center; 
+    justify-content: space-between;
+    color: white;
+    font-family: "Mukta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.top-header li{
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.top-header a{
+    padding-right: 5px;
+}
+.shop-time{
+    width: 50%;
+    display: flex;
+    /* padding-left: 20px; */
+}
+.shop-time li{
+    border-left:1px solid rgba(250,250,250,0.3);
+}
+.social-icons {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-evenly; /* Distribute space evenly between icons */
+  }
+  
+  .social-icons i {
+    margin: 0 10px; /* Optional for additional spacing between icons and edges */
+  }
+  .social-icons i:hover{
+    color: #f1f1f1;
+  }
+  
+  /*Bottom Border style start*/
+  
+.bottom-header{
+    background-color: transparent;
+    display: flex;
+    height: 40px; 
+    vertical-align: middle;
+    line-height: 2px;
+    align-items: center; 
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 20px 50px;
+}
+.bottom-header h1{
+    font-size: 28px;
+    font-weight: 800;
+}
+.Menu{
+    display: flex;
+    font-size:16px ;
+}
+.Menu nav{
+    justify-content: space-between;
+}
+.custom-hover a:hover{
+    color: #A4C639;
+}
+
+/*Menu Hover CSS*/
+.navbar-nav{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .navbar-nav li {
+        display: inline-block;
+        margin-right: 30px;
+      }
+      
+      .navbar-nav a {
+        text-decoration: none;
+        color: black;
+      }
+      
+      .navbar-nav a:hover {
+        position: relative; /* Create a stacking context for the underline */
+      }
+      
+      .navbar-nav a:hover:after {
+        content: "";
+        position: absolute;
+        width: 100%; /* Stretch the underline to full width of the link */
+        height: 3px; /* Set the height of the underline */
+        background-color: #A4C639;
+        bottom: -15px; /* Position the underline at the bottom of the link */
+        left: 0; /* Align the underline to the left edge of the link */
+        transition: width 0.6s ease-out; /* Add a smooth transition effect */
+      }
+    
+     

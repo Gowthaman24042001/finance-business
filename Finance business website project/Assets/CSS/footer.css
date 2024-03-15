@@ -1,0 +1,152 @@
+footer{
+    font-family: 'Poppins';
+}
+.container10{
+    height: 550px;
+    width: 100%;
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+}
+.con10-col{
+    width: 83%;
+    height: 70%;
+    margin: auto;
+    color: white;
+   
+}
+.con10-row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.con10-cot{
+    width: 25%;
+    height: 90%;
+    font-size: 15px;
+
+}
+.con10-cot h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+.con10-cot p{
+    line-height: 30px;
+    padding: 0px 0 25px;
+    color: rgba(255, 255, 255, 0.815);
+}
+.con10-cot li{
+    list-style-type: none;
+    display: inline;
+    margin: 0 5px 0 0;
+}
+.con10-cot i{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+.con10-cot li i:hover{
+    background-color: #A4C639;
+    transform: translateY(-4px);
+}
+.con10-cot:nth-child(2) a, .con10-cot:nth-child(3) a{ 
+    text-decoration: none;
+    display: block;
+    color: rgba(255, 255, 255, 0.815);
+    /* margin: 0 0 8px 0; */
+    line-height: 40px;
+}
+.con10-cot a:hover{
+    color: var(--primary-color);
+}
+
+.con10-form{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+   
+}
+
+.con10-form .meg{
+    height: 90px;
+    display: flex;
+    justify-self: flex-start;
+    border-radius: 15px;
+}
+.con10-form input{
+    background-color: #343434;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+.con10-form ::placeholder{
+    color: rgb(218, 218, 218);
+}
+.footer-bottom{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343434;
+    color: white;
+    text-align: center;
+}
+.footer-bottom h3{
+    font-size: 16px;
+    font-weight: normal;
+}
+.footer-bottom span{
+    color: #A4C639;
+    font-weight: bold;
+}
+.con10-form button{
+    background-color: #A4C639;
+    color: white;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 50px;
+    width: fit-content;
+}
+.con10-form button:hover{
+    background-color: white;
+    color: #A4C639;
+}
+
+/* Responsive code Starts */
+
+/* For small screens (mobile devices) */
+@media only screen and (max-width:  480px) {
+    .container10 {
+        height: auto; /* Adjust height to fit content */
+        padding: 50px 0; /* Add padding to top and bottom */
+    }
+    .con10-col {
+        width: 90%; /* Adjust width */
+    }
+    .con10-row {
+        flex-direction: column; /* Stack columns vertically */
+        gap: 20px; /* Reduce gap between elements */
+    }
+    .con10-cot {
+        width: 100%; /* Occupy full width */
+        text-align: center; /* Center-align content */
+    }
+    .con10-form, .meg {
+        height: auto; /* Adjust height to fit content */
+    }
+    .footer-bottom {
+        height: auto; /* Adjust height to fit content */
+        padding: 20px 0; /* Add padding to top and bottom */
+    }
+    .footer-bottom h3 {
+        font-size: 14px; /* Reduce font size */
+    }
+}
